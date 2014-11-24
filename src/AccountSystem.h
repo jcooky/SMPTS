@@ -1,3 +1,6 @@
+#ifndef __ACOUNT_SYSTEM_H_
+#define __ACOUNT_SYSTEM_H_
+
 typedef struct AccountSystem {
 
     NetworkInterface *networkInterface;
@@ -13,3 +16,5 @@ typedef struct AccountSystem {
 
 AccountSystem* newAccountSystem();
 void deleteAccountSystem(AccountSystem *self);
+
+#endif // __ACOUNT_SYSTEM_H_

@@ -1,4 +1,5 @@
-
+#ifndef __NETWORK_INTERFACE_H_
+#define __NETWORK_INTERFACE_H_
 
 /*
 listen을 하다가 먼저 들어오는쪽의 데이터를 저장함.
@@ -49,3 +50,5 @@ DailyAccountInformation writeDailyAccountInformation(NetworkInterface* self);
 void sendData(NetworkInterface* self, CardInformation *cardInformations, unsigned int len);
 bool isServer(NetworkInterface* self);
 void deleteNetworkInterface(struct NetworkInterface* self);
+
+#endif // __NETWORK_INTERFACE_H_

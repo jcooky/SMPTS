@@ -1,4 +1,7 @@
-﻿#include <stdio.h>
+﻿#ifndef __SMPTS_H_
+#define __SMPTS_H_
+
+#include <stdio.h>
 #include <stdlib.h>
 #include <sys/socket.h>
 #include <sys/types.h>
@@ -31,3 +34,5 @@ extern "C" {
 #endif
 
 #define printf(...) fprintf(stdout, __VA_ARGS__); fflush(stdout)
+
+#endif // __SMPTS_H_

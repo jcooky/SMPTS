@@ -1,3 +1,6 @@
+#ifndef __BUS_CONTROL_H_
+#define __BUS_CONTROL_H_
+
 typedef struct BusControl {
 
     NetworkInterface *busControlNetworkInterface;
@@ -22,3 +25,5 @@ void* getUserInputLoop(void* data);
 void* sendDailyDataLoop(void* data);
 //bool cashAccount(BusControl* self, CardInformation inputcardinfo);
 void printUsers(BusControl* self);
+
+#endif // __BUS_CONTROL_H_

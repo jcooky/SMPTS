@@ -1,3 +1,6 @@
+#ifndef __CARD_INFORMATION_H_
+#define __CARD_INFORMATION_H_
+
 #define TIMESIZE 256
 #define TRANSPORTTYPESIZE 256
 #define INOUTTYPESIZE 256
@@ -17,8 +20,6 @@
 
 #define CARDINFORMATIONVALUECOUNT 7
 
-
-
 typedef struct CardInformation {
 
     char cardId[CARDIDSIZE];
@@ -31,3 +32,5 @@ typedef struct CardInformation {
 
 
 } CardInformation;
+
+#endif // __CARD_INFORMATION_H_

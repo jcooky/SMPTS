@@ -1,4 +1,5 @@
-
+#ifndef __FILE_IO_INTERFACE_H_
+#define __FILE_IO_INTERFACE_H_
 
 //struct CardInformation;
 typedef struct FileIoInterface {
@@ -19,3 +20,5 @@ FileIoInterface* newFileIoInterface();
 void readCard(FileIoInterface *self, char* path, CardInformation *cardInformation);
 void writeCard(struct FileIoInterface *self, const CardInformation *cardInformation, char* path);
 int getDailyInfoSize(FileIoInterface *self, char* path);
+
+#endif // __FILE_IO_INTERFACE_H_

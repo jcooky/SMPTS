@@ -1,3 +1,5 @@
+#ifndef __METRO_CONTROL_H_
+#define __METRO_CONTROL_H_
 
 typedef struct MetroControl {
 
@@ -11,3 +13,4 @@ typedef struct MetroControl {
 
 MetroControl* newMetroControl();
 
+#endif // __METRO_CONTROL_H_
